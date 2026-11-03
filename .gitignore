@@ -1,0 +1,15 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Datos generados (se regeneran desde el código); se conserva solo la estructura
+data/**
+!data/**/
+!data/**/.gitkeep

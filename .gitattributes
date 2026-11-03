@@ -1,0 +1,2 @@
+# Normalize line endings to LF: keeps the repo consistent when edited on Windows and run on Linux
+* text=auto eol=lf
