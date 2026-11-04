@@ -5,6 +5,8 @@
 # only the articles in `keep_articles` (the scope: what applies to someone
 # importing technology products to sell). Ranges are inclusive; "210-" means
 # "from 210 to the end". No `keep_articles` means the whole document applies.
+# Procedures have no articles: `skip_sections` lists the sections left out
+# instead ("VII.D" also leaves out VII.D.1, VII.D.2...).
 
 [[source]]
 id = "lga"
@@ -50,3 +52,14 @@ url = "https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/import
 format = "html"
 structure = "procedure"
 encoding = "windows-1252"
+skip_sections = [
+    "I", "II", "III",  # objetivo, alcance, responsabilidad: administrative boilerplate
+    "V",               # base legal: only a list of norm names, no rules
+    "VI.G",            # local temporalmente considerado zona primaria: large importers only
+    "VI.J",            # mercancías vigentes: containers and heavy machinery in several shipments
+    "VI.M",            # otras disposiciones: internal office hours
+    "VII.A.5",         # asignación de funcionarios: internal to SUNAT
+    "VII.A.10",        # continuación del despacho: internal to SUNAT
+    "VII.D",           # casos especiales: bulk cargo, pipelines, electric power
+    "VIII", "IX",      # vigencia, anexos
+]
