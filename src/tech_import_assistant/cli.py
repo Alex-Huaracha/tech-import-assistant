@@ -2,4 +2,4 @@
 
 
 def main() -> None:
-    print("support-assistant: not implemented yet.")
+    print("tech-import-assistant: not implemented yet.")

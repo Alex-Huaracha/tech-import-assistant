@@ -1,7 +1,7 @@
 [project]
-name = "support-assistant"
+name = "tech-import-assistant"
 version = "0.1.0"
-description = "Customer support assistant for an e-commerce store, built on RAG"
+description = "Assistant for importing technology products into Peru, built on RAG over customs regulations"
 readme = "README.md"
 authors = [
     { name = "Alex Huaracha", email = "129701149+Alex-Huaracha@users.noreply.github.com" }
@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-support-assistant = "support_assistant.cli:main"
+tech-import-assistant = "tech_import_assistant.cli:main"
 
 [build-system]
 requires = ["uv_build>=0.13.5,<0.14.0"]
