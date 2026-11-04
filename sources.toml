@@ -12,10 +12,11 @@ title = "Ley General de Aduanas (Decreto Legislativo 1053), texto consolidado"
 issuer = "SUNAT"
 url = "https://www.sunat.gob.pe/legislacion/procedim/normasadua/gja-03normasoc.htm"
 format = "html"
+structure = "articles"
 encoding = "windows-1252"  # the server's HTTP header says utf-8; the page's <meta> is right
 keep_articles = [
     "1-3",      # objeto, definiciones, ámbito
-    "49-50",    # importación para el consumo
+    "49",       # importación para el consumo
     "98",       # regímenes de excepción: courier, envíos postales
     "129-179",  # declaración, régimen tributario, control, levante, prenda y abandono legal
     "188-204",  # infracciones y sanciones
@@ -28,6 +29,7 @@ title = "Reglamento de la Ley General de Aduanas (Decreto Supremo 010-2009-EF), 
 issuer = "SUNAT"
 url = "https://www.sunat.gob.pe/legislacion/procedim/normasadua/normasociada/gja-00.04.htm"
 format = "html"
+structure = "articles"
 encoding = "windows-1252"
 keep_articles = [
     "1-3",      # objeto, ámbito, referencias
@@ -46,4 +48,5 @@ title = "Procedimiento General Importación para el Consumo (DESPA-PG.01)"
 issuer = "SUNAT"
 url = "https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/procGeneral/despa-pg.01.htm"
 format = "html"
+structure = "procedure"
 encoding = "windows-1252"
