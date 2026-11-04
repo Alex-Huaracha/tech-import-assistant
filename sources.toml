@@ -1,0 +1,49 @@
+# Catalog of source documents for the knowledge base.
+#
+# Each [[source]] is one official document. download.py fetches `url` into
+# data/raw/<id>.<format>; ingest.py later reads it with `encoding` and keeps
+# only the articles in `keep_articles` (the scope: what applies to someone
+# importing technology products to sell). Ranges are inclusive; "210-" means
+# "from 210 to the end". No `keep_articles` means the whole document applies.
+
+[[source]]
+id = "lga"
+title = "Ley General de Aduanas (Decreto Legislativo 1053), texto consolidado"
+issuer = "SUNAT"
+url = "https://www.sunat.gob.pe/legislacion/procedim/normasadua/gja-03normasoc.htm"
+format = "html"
+encoding = "windows-1252"  # the server's HTTP header says utf-8; the page's <meta> is right
+keep_articles = [
+    "1-3",      # objeto, definiciones, ámbito
+    "49-50",    # importación para el consumo
+    "98",       # regímenes de excepción: courier, envíos postales
+    "129-179",  # declaración, régimen tributario, control, levante, prenda y abandono legal
+    "188-204",  # infracciones y sanciones
+    "205-",     # procedimientos aduaneros y resoluciones anticipadas
+]
+
+[[source]]
+id = "rlga"
+title = "Reglamento de la Ley General de Aduanas (Decreto Supremo 010-2009-EF), texto consolidado"
+issuer = "SUNAT"
+url = "https://www.sunat.gob.pe/legislacion/procedim/normasadua/normasociada/gja-00.04.htm"
+format = "html"
+encoding = "windows-1252"
+keep_articles = [
+    "1-3",      # objeto, ámbito, referencias
+    "10",       # consultas a la administración aduanera
+    "65-66",    # importación para el consumo
+    "184-234",  # declaración (incl. simplificada y restringidas), tributos, garantías, control, levante
+    "236-237",  # abandono voluntario y recuperación de mercancías en abandono legal
+    "242-243",  # disposición de mercancías restringidas
+    "246-252",  # infracciones y sanciones
+    "255-",     # resoluciones anticipadas
+]
+
+[[source]]
+id = "despa-pg01"
+title = "Procedimiento General Importación para el Consumo (DESPA-PG.01)"
+issuer = "SUNAT"
+url = "https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/procGeneral/despa-pg.01.htm"
+format = "html"
+encoding = "windows-1252"

@@ -13,3 +13,6 @@ wheels/
 data/**
 !data/**/
 !data/**/.gitkeep
+
+# Local secrets (API keys) and overrides
+.env
